@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A Student Registration System for managing student details.">
+    <title>Student Registration System</title>
+    
+</head>
+<body>
+    <header>
+        <h1>Student Registration System</h1>
+        <details>
+          <summary style="font-weight: bold; font-size: 1.2rem; cursor: pointer; color: #f3efef;">
+              About the Student Registration System
+          </summary>
+          <p style="margin-top: 10px; font-size: 20px; color: #000000;">
+              This is a student registration form where we can input and manage a table of all details about students,
+              including their name, ID, email, and contact number. 
+          </p>
+      </details>
+      
+    </header>
+    <main>
+        <!-- Registration Form -->
+        <section id="registration-form">
+            <h2>Enter Details</h2>
+            <form id="studentForm">
+                <label for="studentName">Student Name:</label>
+                <input type="text" id="studentName" name="studentName" placeholder="Enter student name" required>
+
+                <label for="studentID">Student ID:</label>
+                <input type="text" id="studentID" name="studentID" placeholder="Enter student ID" required>
+
+                <label for="emailID">Email ID:</label>
+                <input type="email" id="emailID" name="emailID" placeholder="Enter email ID" required>
+
+                <label for="contactNo">Contact No:</label>
+                <input type="tel" id="contactNo" name="contactNo" placeholder="Enter contact number" required>
+
+                <button type="button" id="submitBtn">Add data</button>
+            </form>
+        </section>
+
+        <!-- Display Section -->
+        <section id="display-section">
+            <h2>Registered Students</h2>
+            <table id="studentTable">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Student ID</th>
+                        <th>Email</th>
+                        <th>Contact No</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <!-- Student records will appear here dynamically -->
+                </tbody>
+            </table>
+        </section>
+        
+<nav class="text-center sm:flex items-center justify-between border-t border-gray-400 mx-[10%] mt-12 py-6">
+    <p class="text-gray-800 dark:text-gray-200">© 2024 Jatin Singh. All rights reserved.</p>
+    </nav>
+    </main>
+    <script src="index.js"></script>
+</body>
+</html>
